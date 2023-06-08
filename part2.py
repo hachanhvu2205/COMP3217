@@ -70,31 +70,31 @@ accuracy_nb = accuracy_score(y_test, y_pred_nb)
 
 # Print the results
 print(report_knn)
-print("Accuracy:", accuracy_knn)
-print()
+print(accuracy_knn)
+
 
 print(report_logreg)
-print("Accuracy:", accuracy_logreg)
-print()
+print(accuracy_logreg)
+
 
 print(report_dt)
-print("Accuracy:", accuracy_dt)
-print()
+print(accuracy_dt)
+
 
 print(report_rf)
-print("Accuracy:", accuracy_rf)
-print()
+print(accuracy_rf)
+
 
 print(report_svm)
-print("Accuracy:", accuracy_svm)
-print()
+print(accuracy_svm)
+
 
 print(report_gb)
-print("Accuracy:", accuracy_gb)
-print()
+print(accuracy_gb)
+
 
 print(report_nb)
-print("Accuracy:", accuracy_nb)
+print(accuracy_nb)
 
 # Read the testing data
 data_predict = pd.read_csv('TestingDataMulti.csv', sep=',', header=None)
