@@ -119,5 +119,5 @@ data_predict['PredictedResult'] = predicted_results
 # Print the updated data with predicted results
 print(data_predict)
 
-#Output the result
+# Output the result
 data_predict.to_csv('TestingResultsBinary.csv', index=False, header=False)

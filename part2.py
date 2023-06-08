@@ -111,5 +111,5 @@ data_predict['PredictedResult'] = predicted_results
 # Print the updated data with predicted results
 print(data_predict)
 
-#output the result
+# Output the result
 data_predict.to_csv('TestingResultsMulti.csv', index=False, header=False)
