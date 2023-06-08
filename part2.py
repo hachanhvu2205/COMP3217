@@ -95,3 +95,21 @@ print()
 
 print(report_nb)
 print("Accuracy:", accuracy_nb)
+
+# Read the testing data
+data_predict = pd.read_csv('TestingDataMulti.csv', sep=',', header=None)
+
+# Train the classifier on the entire dataset
+rf_classifier.fit(features, result)
+
+# Use the trained random forest classifier to predict the results
+predicted_results = rf_classifier.predict(data_predict)
+
+# Assign the predicted results to the respective column in the data
+data_predict['PredictedResult'] = predicted_results
+
+# Print the updated data with predicted results
+print(data_predict)
+
+#output the result
+data_predict.to_csv('TestingResultsMulti.csv', index=False, header=False)
